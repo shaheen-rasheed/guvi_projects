@@ -1,0 +1,52 @@
+<html>
+<head>
+<body>
+<center>
+<form name="pro">
+ENTER THE VALUE:<input type="text" name="i1">
+<br>
+<br>
+THE ANSWER IS:<input type="text" name="i2">
+<br>
+<br>
+<input type='button' value='KILO-TO-POUND'  onclick="kitpo()">
+<input type='button' value='POUND-TO-KILO'  onclick="potki()">
+<br>
+<br>
+<input type='button' value='METER-TO-YARDS'  onclick="metya()">
+<input type='button' value='YARDS-TO-METER'  onclick="yatme()">
+<br>
+<br>
+<input type='button' value='CELSIUS-TO-FAHRENHEIT'  onclick="cetfqa()">
+<input type='button' value='FAHRENHEIT-TO-CELSIUS'  onclick="fatce()">
+</form>
+</center>
+<script>
+function kitpo()
+{
+pro.i2.value=parseInt(pro.i1.value)*2.208;
+}
+function potki()
+{
+pro.i2.value=parseInt(pro.i1.value)/2.208;
+}
+function metya()
+{
+pro.i2.value=parseInt(pro.i1.value)*1.09361;
+}
+function yatme()
+{
+pro.i2.value=parseInt(pro.i1.value)/1.09361;
+}
+function cetfqa()
+{
+pro.i2.value=(parseInt(pro.i1.value)/18)-32;
+}
+function fatce()
+{
+pro.i2.value=(parseInt(pro.i1.value)*18)+32;
+}
+</script>
+</body>
+</head>
+</html>
